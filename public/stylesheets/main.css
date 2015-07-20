@@ -1,0 +1,139 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #fafafa;
+    padding-top: 58px;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 0;
+    position: relative;
+}
+
+.navbar {
+    margin: 0;
+    border: 0;
+}
+
+.navbar-wrapper {
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 15;
+    min-height: 58px;
+    background: #2d2d32;
+}
+
+.navbar .navbar-brand {
+    padding: 12px 4px;
+    line-height: 32px;
+    margin: 0;
+}
+
+.navbar .navbar-brand a {
+    float: left;
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand em {
+    font-size: 14px;
+    color: #f3f4f5;
+    padding-left: 15px;
+    padding-top: 8px;
+}
+
+.navbar .nav {
+    float: right;
+    color: #ffffff;
+    font-size: 14px;
+    margin: 1px 0 0 0;
+
+}
+
+.navbar .nav > li > a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.navbar .nav > li > a {
+    padding: 18px 25px 19px;
+    background: none;
+    box-shadow: none;
+    text-shadow: none;
+    color: #ffffff;
+}
+
+.navbar-toggle {
+    background: rgba(0, 0, 0, 0.3);
+    margin-top: 12px;
+}
+.navbar-toggle span{
+    background: #ffffff;
+}
+.navbar-collapse .in {
+    overflow-y: visible;
+}
+
+@media(max-width: 767px){
+    .navbar .nav {
+        float: none;
+    }
+    .navbar .nav > li {
+        height: 57px;
+    }
+    .navbar .nav > li >a{
+        border-bottom: 1px solid rgba(118,111,107,0.69);
+    }
+}
+/*
+报名弹窗样式
+*/
+.nav-user{
+    position: relative;
+}
+.navbar .nav .nav-user>.nav-user-signin{
+    padding: 17px 20px;
+}
+.navbar .nav>.nav-user>section>.signin-box{
+    display: none;
+}
+.navbar .nav>.nav-user>section:hover>.signin-box{
+    display: block;
+}
+.nav-user .signin-box {
+    z-index: 110;
+    background: #414145;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+    top: 57px;
+    right: 0;
+    position: absolute;
+}
+.navbar .nav .nav-user>section a{
+    color: #ffffff;
+    display: block;
+    text-decoration: none;
+}
+.nav-user .signin-box{
+    width: 300px;
+    color: #ffffff;
+}
+.nav-user .signin-box form{
+    padding: 15px 20px 12px;
+}
+.nav-user .signin-box div{
+    font-size: 13px;
+}
+.input-group{
+    display: inline;
+}
+
+
+.icon-user:before { content: '\1f464'; } /* '\1f464' */
