@@ -45,16 +45,19 @@ body
                 div.form-group
                     select.form-control(id="route" name="route")
                         option(value=0) 请选择
+                        each val,index in routes
+                            option(value=routes[index].id)=routes[index].title
         hr
-        each val,i in  articles
-            section.content
-                div.row
-                    div.col-xs-3
-                        img(src="http://www.ccgoufang.com/"+articles[i].logofile,alt="",class="img-responsive")
-                    div.col-xs-7
-                        p=articles[i].title
-                    div.col-xs-2
-                        img(src="images/ico_arrow03.png" alt="" style="margin-top: 15px;")
-                    div.clearfix.visible-xs-block
+        div.container
+            each val,i in  articles
+                section.content
+                    div.row
+                        div.col-xs-3
+                            img(src="http://www.ccgoufang.com/"+articles[i].logofile,alt="",class="img-responsive")
+                        div.col-xs-7
+                            p=articles[i].title
+                        div.col-xs-2
+                            img(src="images/ico_arrow03.png" alt="" style="margin-top: 15px;")
+                        div.clearfix.visible-xs-block
     script(src="javascripts/jquery.js")
     script(src="javascripts/bootstrap.js")
