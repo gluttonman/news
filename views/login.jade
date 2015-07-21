@@ -1,98 +1,60 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- 锟斤拷锟斤拷3锟斤拷meta锟斤拷签*锟斤拷锟斤拷*锟斤拷锟斤拷锟斤拷前锟芥，锟轿猴拷锟斤拷锟斤拷锟斤拷锟捷讹拷*锟斤拷锟斤拷*锟斤拷锟斤拷锟斤拷锟� -->
-<title>Packagist Test</title>
-<!-- Bootstrap -->
-<link href="stylesheets/bootstrap.css" rel="stylesheet">
-<link rel="stylesheet" href="stylesheets/login.css"/>
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-<script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
-</head>
-<body>
-<section class="wrapper">
-<header class="navbar-wrapper navbar-fixed-top">
-<nav class="container">
-<div class="navbar" role="navigation">
-<div class="navbar-header">
-<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
-<h1 class="navbar-brand">
-<a href="http://3g.ccgoufang.com">璐埧缃�</a>
-<em class="hidden-sm hidden-xs">涓�涓濂囩殑缃戠珯</em>
-</h1>
-</div>
-<div class="collapse navbar-collapse">
-<ul class="nav navbar-nav">
-<li><a href="">鏂版埧</a></li>
-<li><a href="">鏂伴椈</a></li>
-<li><a href="">浜屾墜鎴�</a></li>
-<li><a href="login">瑙嗛</a></li>
-</ul>
-</div>
-</div>
-</nav>
-</header>
-<section>
-<div class="container">
-<form class="form-inline">
-<div class="form-group ">
-<input type="text" class="form-control" id="name" name="name" placeholder="濮撳悕锛�"/>
-</div>
-<div class="form-group ">
-<input type="text" class="form-control" id="telphone" name="telphone" placeholder="鐢佃瘽锛�"/>
-</div>
-<div class="form-group ">
-<input type="text" class="form-control" id="count" name="count" placeholder="浜烘暟锛�"/>
-</div>
-<div class="form-group ">
-<select class="form-control" id="route" name="route">
-<option value="0">璇烽�夋嫨</option>
-</select>
-</div>
-</form>
-</div>
-</section>
-<hr>
-<section class="content">
-<div class="row">
-<div class="col-xs-3">
-<img src="http://www.ccgoufang.com/upload/resources/image/2015/07/15/22940.png" alt="" class="img-responsive"/>
-</div>
-<div class="col-xs-7">
-<p>杩欐槸涓�涓祴璇曡繖鏄竴涓祴璇曡繖鏄竴涓祴璇曡繖鏄竴涓祴璇曡繖鏄竴涓祴璇曡繖鏄竴涓祴璇曡繖鏄竴涓祴璇曡繖鏄竴涓祴璇曡繖鏄竴涓祴璇�</p>
-</div>
-<div class="col-xs-2">
-<img src="images/ico_arrow03.png" alt="" style="margin-top: 15px;"/>
-</div>
-</div>
-<div class="clearfix visible-xs-block"></div>
-<div class="row">
-<div class="col-xs-3">
-<img src="http://www.ccgoufang.com/upload/resources/image/2015/07/15/22940.png" alt="" class="img-responsive"/>
-</div>
-<div class="col-xs-7">
-<p>杩欐槸涓�涓祴璇曡繖鏄竴涓祴璇曡繖鏄竴涓祴璇曡繖鏄竴涓祴璇曡繖鏄竴涓祴璇曡繖鏄竴涓祴璇曡繖鏄竴涓祴璇曡繖鏄竴涓祴璇曡繖鏄竴涓祴璇�</p>
-</div>
-<div class="col-xs-2">
-<img src="images/ico_arrow03.png" alt="" style="margin-top: 15px;"/>
-</div>
-</div>
-</section>
-</section>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="javascripts/jquery.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="javascripts/bootstrap.js"></script>
-</body>
-</html>
+doctype html
+head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title="购房网团购"
+    //
+        Bootstrap
+    link(href="stylesheets/bootstrap.css" rel="stylesheet")
+    link(href="stylesheets/login.css" rel="stylesheet")
+    //
+        HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+        WARNING: Respond.js doesn't work if you view the page via file://
+body
+    section.wrapper
+        header.navbar-wrapper.navbar-fixed-top
+            nav.container
+                div.navbar(role="navigator")
+                    div.navbar-header
+                        button.navbar-toggle(type="button" data-toggle="collapse" data-target=".navbar-collapse")
+                            span.icon-bar
+                            span.icon-bar
+                            span.icon-bar
+                        h1.navbar-brand
+                            a(href="http://3g.ccgoufang.com") 购房网
+                            em.hidden-sm.hidden-xs 一个神奇的网站
+                    div.collapse.navbar-collapse
+                        ul.nav.navbar-nav
+                            li
+                                a(href="") 新房
+                            li
+                                a(href="") 新闻
+                            li
+                                a(href="") 二手房
+
+
+        div.container
+            form.form-inline
+                div.form-group
+                    input.form-control(type="text" id="name" name="name" placeholder="姓名：")
+                div.form-group
+                    input.form-control(type="text" id="telphone" name="telphone" placeholder="电话：")
+                div.form-group
+                    input.form-control(type="text" id="count" nme="count" placeholder="人数：")
+                div.form-group
+                    select.form-control(id="route" name="route")
+                        option(value=0) 请选择
+        hr
+        each val,i in  articles
+            section.content
+                div.row
+                    div.col-xs-3
+                        img(src="http://www.ccgoufang.com/"+articles[i].logofile,alt="",class="img-responsive")
+                    div.col-xs-7
+                        p=articles[i].title
+                    div.col-xs-2
+                        img(src="images/ico_arrow03.png" alt="" style="margin-top: 15px;")
+                    div.clearfix.visible-xs-block
+    script(src="javascripts/jquery.js")
+    script(src="javascripts/bootstrap.js")
