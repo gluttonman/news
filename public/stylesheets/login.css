@@ -1,0 +1,13 @@
+body,html{
+    height: 100%;
+}
+body{
+    padding-top: 58px;
+}
+.navbar .navbar-header{
+    float: left;
+}
+.navbar .navbar-nav{
+    float: right;
+    margin-right: 3px;
+}
