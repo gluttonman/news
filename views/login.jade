@@ -55,7 +55,13 @@ body
                         div.col-xs-3
                             img(src="http://www.ccgoufang.com/"+articles[i].logofile,alt="",class="img-responsive")
                         div.col-xs-7
-                            p=articles[i].title
+                            p
+                                if articles[i].linkflag=='Y'
+                                    a(href=articles[i].redirecturl title=articles[i].title)=articles[i].title
+                                else if articles[i].staticFileName
+                                    a(href="http://3g.ccgoufang.com/"+articles[i].staticFileName title=articles[i].title )=articles[i].title
+                                else
+                                    a(href="http://3g.ccgoufang.com/"+articles[i].path+"/"+articles[i].id+".html" title=articles[i].title)=articles[i].title
                         div.col-xs-2
                             img(src="images/ico_arrow03.png" alt="" style="margin-top: 15px;")
                         div.clearfix.visible-xs-block
