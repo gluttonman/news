@@ -41,6 +41,7 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+# add ignore file by myself
 .idea
 build.xml
 public.zip
