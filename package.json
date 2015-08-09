@@ -1,0 +1,10 @@
+{
+  "name": "news",
+  "version": "1.0.0",
+  "description": "news dependencies modules",
+  "scripts": "",
+  "dependencies": {
+    "async": "^1.4.1",
+    "express": "^4.13.3"
+  }
+}
